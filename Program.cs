@@ -62,7 +62,17 @@ namespace Bakery
             Drink customerDrink = new Drink(userDrink, 2);
             customerDrink.DeterminePriceDrink(userDrink);
 
-            
+            Console.WriteLine("Which bread would you like? (0-4)");
+            foreach (KeyValuePair<int, string> bread in bread)  
+            {  
+                Console.WriteLine("Key: {0}, Value: {1}",  
+                bread.Key, bread.Value);
+            } 
+            int flovorBread = int.Parse(Console.ReadLine());  
+            Console.WriteLine("How many loaves of Bread would you like?");
+            int userBread = int.Parse(Console.ReadLine());
+            Bread customerBread = new Bread(userBread, 2);
+            customerBread.DeterminePriceBread(userBread);
 
             int totalPrice = (customerPastry.DeterminePricePastry(userPastry) + customerBread.DeterminePriceBread(userBread)+customerDrink.DeterminePriceDrink(userDrink));
             Console.WriteLine("----------------------");
