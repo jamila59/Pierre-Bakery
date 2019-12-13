@@ -1,21 +1,29 @@
-// using System;
-// using System.Collections.Generic;
+using System;
+using System.Collections.Generic;
 
-// namespace Bakery
-// {
-//     class Bread 
-//     {
-//         public int QuantityBread { get; set;}
-//         public int TotalBread { get; set; }
+namespace Bakery
+{
+    public class Bread 
+    {
+        public int QuantityBread { get; set;}    
+        public int TotalBread { get; set;}
+        public int PerBread { get; set; }
 
-//         public Bread()
-//         {
-//             QuantityBread = quantityBread;
-//             TotalBread =  totalBread; 
-//         }
-//         public void DeterminePriceBread()
-//         {
-//             return TotalBread;
-//         }
-//     }
-// }
+        public Bread(int quantityPatry, int totalBread)
+        {
+            QuantityBread = quantityPatry;
+            TotalBread = totalBread;
+            PerBread = 5;
+        }
+        public int DeterminePriceBread(int quantityPatry) 
+        {
+            TotalBread= 0;
+            TotalBread= (QuantityBread * PerBread);
+            if (QuantityBread == 3)
+            {
+                TotalBread = 10;
+            }
+            return TotalBread;
+        }
+    }
+}

@@ -15,9 +15,14 @@ namespace Bakery
             TotalPastry = totalPastry;
             PerPastry = 2;
         }
-        public string DeterminePricePastry() 
+        public int DeterminePricePastry(int quantityPatry) 
         {
-            TotalPastry = (QuantityPastry * PerPastry);
+            TotalPastry= 0;
+            TotalPastry= (QuantityPastry * PerPastry);
+            if (QuantityPastry == 3)
+            {
+                TotalPastry --;
+            }
             return TotalPastry;
         }
     }
