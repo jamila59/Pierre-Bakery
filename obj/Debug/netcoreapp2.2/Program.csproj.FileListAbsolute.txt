@@ -23,3 +23,14 @@
 /Users/Guest/Desktop/Pierre-Bakery/obj/Debug/netcoreapp2.2/Program.AssemblyInfo.cs
 /Users/Guest/Desktop/Pierre-Bakery/obj/Debug/netcoreapp2.2/Program.dll
 /Users/Guest/Desktop/Pierre-Bakery/obj/Debug/netcoreapp2.2/Program.pdb
+/Users/Guest/Desktop/PierressBakery/bin/Debug/netcoreapp2.2/Program.deps.json
+/Users/Guest/Desktop/PierressBakery/bin/Debug/netcoreapp2.2/Program.runtimeconfig.json
+/Users/Guest/Desktop/PierressBakery/bin/Debug/netcoreapp2.2/Program.runtimeconfig.dev.json
+/Users/Guest/Desktop/PierressBakery/bin/Debug/netcoreapp2.2/Program.dll
+/Users/Guest/Desktop/PierressBakery/bin/Debug/netcoreapp2.2/Program.pdb
+/Users/Guest/Desktop/PierressBakery/obj/Debug/netcoreapp2.2/Program.csprojAssemblyReference.cache
+/Users/Guest/Desktop/PierressBakery/obj/Debug/netcoreapp2.2/Program.csproj.CoreCompileInputs.cache
+/Users/Guest/Desktop/PierressBakery/obj/Debug/netcoreapp2.2/Program.AssemblyInfoInputs.cache
+/Users/Guest/Desktop/PierressBakery/obj/Debug/netcoreapp2.2/Program.AssemblyInfo.cs
+/Users/Guest/Desktop/PierressBakery/obj/Debug/netcoreapp2.2/Program.dll
+/Users/Guest/Desktop/PierressBakery/obj/Debug/netcoreapp2.2/Program.pdb
