@@ -1,21 +1,24 @@
 using System;
 using System.Collections.Generic;
 
-namespace Bakery.Bread.Pastry
+namespace Bakery
 {
     public class Pastry 
     {
-        public int QuantityPatry { get; set;}    
-        public int TotalPastry { ger; set;}
+        public int QuantityPastry { get; set;}    
+        public int TotalPastry { get; set;}
+        public int PerPastry { get; set; }
 
-        public Pastry()
+        public Pastry(int quantityPatry, int totalPastry)
         {
-            QuantityPatry = 0;
-            TotalPastry = 0;
+            QuantityPastry = quantityPatry;
+            TotalPastry = totalPastry;
+            PerPastry = 2;
         }
-        public void DeterminePricePastry 
+        public string DeterminePricePastry() 
         {
-
+            TotalPastry = (QuantityPastry * PerPastry);
+            return TotalPastry;
         }
     }
 }

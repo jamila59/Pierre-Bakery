@@ -1,21 +1,21 @@
-using System;
-using System.Collections.Generic;
+// using System;
+// using System.Collections.Generic;
 
-namespace Bakery.Bread.Pastry
-{
-    class Bread 
-    {
-        public int QuantityBread { get; set;}
-        public int TotalBread { get; set; }
+// namespace Bakery
+// {
+//     class Bread 
+//     {
+//         public int QuantityBread { get; set;}
+//         public int TotalBread { get; set; }
 
-        public Bread()
-        {
-            QuantityBread = 0;
-            TotalBread = 0; 
-        }
-        public void DeterminePriceBread()
-        {
-
-        }
-    }
-}
+//         public Bread()
+//         {
+//             QuantityBread = quantityBread;
+//             TotalBread =  totalBread; 
+//         }
+//         public void DeterminePriceBread()
+//         {
+//             return TotalBread;
+//         }
+//     }
+// }

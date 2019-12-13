@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Pastry.Bread
+namespace Bakery
 {
     class Project 
     {
@@ -13,12 +13,14 @@ namespace Pastry.Bread
             {
                 Console.WriteLine("Today's Scpecials:\n Bread: buy 2 loaves get the 3rd free. \n Pastry: buy 1 for $2 or 3 for $5. ");
             }
-            else
+            else if (scpecials == "N")
             {
                 Console.WriteLine("How many loaves of Bread would you like?");
-                int userBread = Console.ReadLine();
-                Console.WriteLine("How many loaves of Bread would you like?");
+                int userBread = int.Parse(Console.ReadLine());
+                Console.WriteLine("How many Pastry's would you like?");
                 int userPastry = int.Parse(Console.ReadLine());
+                Pastry customerPastry = new Pastry(userPastry,2);
+                Console.WriteLine(customerPastry.DeterminePricePastry());
 
             }
         }
