@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/Pierre-s-Bakery/Program.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/Pierre-Bakery/Program.csproj",
       "projectName": "Program",
-      "projectPath": "/Users/Guest/Desktop/Pierre-s-Bakery/Program.csproj",
+      "projectPath": "/Users/Guest/Desktop/Pierre-Bakery/Program.csproj",
       "packagesPath": "/Users/Guest/.nuget/packages/",
-      "outputPath": "/Users/Guest/Desktop/Pierre-s-Bakery/obj/",
+      "outputPath": "/Users/Guest/Desktop/Pierre-Bakery/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
