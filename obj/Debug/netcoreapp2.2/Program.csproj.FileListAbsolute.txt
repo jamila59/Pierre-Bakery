@@ -1,0 +1,3 @@
+/Users/Jama/Desktop/Pierres-Bakery/obj/Debug/netcoreapp2.2/Program.csprojAssemblyReference.cache
+/Users/Jama/Desktop/Pierres-Bakery/obj/Debug/netcoreapp2.2/Program.AssemblyInfoInputs.cache
+/Users/Jama/Desktop/Pierres-Bakery/obj/Debug/netcoreapp2.2/Program.AssemblyInfo.cs
