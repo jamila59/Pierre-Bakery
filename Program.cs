@@ -5,7 +5,7 @@ namespace Bakery
 {
     class Project 
     {
-        public static Dictionary<int, string> picks = new Dictionary<int, string>() 
+        public static Dictionary<int, string> pastrys = new Dictionary<int, string>() 
         {
             {0, "Croissant"},
             {1, "Puff Pastry"},
@@ -13,7 +13,7 @@ namespace Bakery
             {3, "Cream Horn"} 
         };
 
-        public static Dictionary<int, string> picks2 = new Dictionary<int, string>() 
+        public static Dictionary<int, string> bread = new Dictionary<int, string>() 
         {
             {0, "Itallian"},
             {1, "French"},
@@ -32,40 +32,41 @@ namespace Bakery
             Console.WriteLine("----------------------");
 
             Console.WriteLine("Which pastry would you like? (0-4)");
-            foreach (KeyValuePair<int, string> pick in picks)  
+            foreach (KeyValuePair<int, string> pastry in pastrys)  
             {  
                 Console.WriteLine("Key: {0}, Value: {1}",  
-                pick.Key, pick.Value);
+                pastry.Key, pastry.Value);
             }  
 
-            string flovorPastry = Console.ReadLine();  
-            Console.WriteLine(flovorPastry);
-
+            int flovorPastry = int.Parse(Console.ReadLine());  
+            
             Console.WriteLine("How many Pastry's would you like?");
             int userPastry = int.Parse(Console.ReadLine());
             Pastry customerPastry = new Pastry(userPastry, 2);
             customerPastry.DeterminePricePastry(userPastry);
 
             Console.WriteLine("Which bread would you like? (0-4)");
-            foreach (KeyValuePair<int, string> pick2 in picks2)  
+            foreach (KeyValuePair<int, string> bread in bread)  
             {  
                 Console.WriteLine("Key: {0}, Value: {1}",  
-                pick2.Key, pick2.Value);
+                bread.Key, bread.Value);
             } 
-
-            string flovorBread = Console.ReadLine();  
-            Console.WriteLine(flovorBread); 
-
+            int flovorBread = int.Parse(Console.ReadLine());  
+           
             Console.WriteLine("How many loaves of Bread would you like?");
             int userBread = int.Parse(Console.ReadLine());
             Bread customerBread = new Bread(userBread, 2);
             customerBread.DeterminePriceBread(userBread);
 
             int totalPrice = (customerPastry.DeterminePricePastry(userPastry) + customerBread.DeterminePriceBread(userBread));
+
             Console.WriteLine("----------------------");
+            Console.WriteLine("You hava ordered: " + "" + userBread + " " + bread[flovorBread] + "(s)");
+
+            Console.WriteLine("You hava ordered: " + "" + userPastry + " " + pastrys[flovorPastry] + "(s)");
+
             Console.WriteLine("Total due: $" + totalPrice);
    
-           
         }
     }
 }
